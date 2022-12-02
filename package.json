@@ -61,6 +61,7 @@
     "@vitejs/plugin-react": "^2.2.0",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^8.3.0",
+    "chromatic": "^6.11.4",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
@@ -84,5 +85,7 @@
   "peerDependencies": {
     "react": "16.8.0 || >=17.x",
     "react-dom": "16.8.0 || >=17.x"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "stay-sexy-react@1.0.0"
 }
