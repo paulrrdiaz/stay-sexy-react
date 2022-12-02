@@ -17,13 +17,13 @@ const textColors = {
   primary: 'text-ui-primary',
 }
 
-interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
+export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
   size?: keyof typeof sizes
   colorScheme?: keyof typeof textColors
 }
 
-const Heading: React.FC<HeadingProps> = (props) => {
+export const Heading: React.FC<HeadingProps> = (props) => {
   const { as: Component = 'h2', size = '2xl', colorScheme = 'default', className, children } = props
   const headingClasses = clsx(
     'font-semibold font-mono',
@@ -34,5 +34,3 @@ const Heading: React.FC<HeadingProps> = (props) => {
 
   return <Component className={headingClasses}>{children}</Component>
 }
-
-export default Heading
